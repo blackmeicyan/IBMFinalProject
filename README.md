@@ -2,13 +2,16 @@
 Final Project for IBM Course
 # Simple Interest Calculator
 
-A calculator that calculates simple interest given principal, annual rate of interest and time period in years.
-Input:
-   p, principal amount
-   t, time period in years
-   r, annual rate of interest
-Output
-   simple interest = p*t*r
-   
-2025 XYZ, Inc.
-4.
+Welcome to the **Simple Interest Calculator** project
+This open-source script is developed as part of a larger initiative to support financial literacy and provide accessible tools to underserved communities.
+
+## About
+
+This project provides a simple, easy-to-use Bash script to calculate simple interest. It's intended to serve as a foundational financial tool, especially for those new to savings, credit, and interest calculations.
+
+---
+
+###  Formula Used
+
+The script uses the standard formula for calculating simple interest:
+Simple Interest (SI) = (Principal × Rate × Time) / 100
