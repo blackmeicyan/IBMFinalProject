@@ -6,6 +6,7 @@
         <link rel="icon" type="image/jpg" href="Rblogo.jpg">
         <title>Cmpound Interest Calculator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
     <body>
         <div id="customAlert" style="display:none;" class="popup">
@@ -23,8 +24,9 @@
               <option value="annually">Annually</option>
             </select>  <br/>       
 
-            Interest Rate <td></td><input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" oninput="updateRate()"> 
-            <span id="rate_val"> 10.25 </span>% <br/>
+            Interest Rate <span id="rate_val"> 5.25 </span>% <br/>
+           <input type="range" id="rate" min="1" max="20" value="5.25" step="0.25" oninput="updateRate()"> 
+            
             <script>
               function updateRate() {
                 const rate = document.getElementById("rate").value;
