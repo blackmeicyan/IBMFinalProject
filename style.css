@@ -18,18 +18,18 @@ h2 {
 .maindiv {
     background-color: white;
     color: black;
-    width: 90%;               /* Makes width relative to screen */
+    width: 95%;               /* Makes width relative to screen */
     max-width: 400px;         /* Optional: Limit width on large screens */
-    padding: 20px;
-    border-radius: 25px;
+    padding: 10px;
+    border-radius: 15px;
     text-align: left;
-    margin: 20px auto;        /* Center it horizontally */
+    margin: 15px auto;        /* Center it horizontally */
     box-sizing: border-box;   /* Prevents padding from affecting width */
 }
 
 input, select, textarea {
-  width: 20%;           /* Fills parent container width */
-  max-width: 30%;       /* Prevents overflow */
+  width: 40px;           /* Fills parent container width */
+  max-width: 50px;       /* Prevents overflow */
   padding: 4px;
   margin: 4px 0;
   box-sizing: border-box; /* Includes padding in the width */
