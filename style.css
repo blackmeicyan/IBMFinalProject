@@ -27,6 +27,13 @@ h2 {
     box-sizing: border-box;   /* Prevents padding from affecting width */
 }
 
+input, select, textarea {
+  width: 100%;           /* Fills parent container width */
+  max-width: 100%;       /* Prevents overflow */
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box; /* Includes padding in the width */
+}
 .popup {
   position: fixed;
   top: 30%;
