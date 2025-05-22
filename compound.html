@@ -7,12 +7,29 @@
     </head>
     <body>
         <div class="maindiv">
-            <h1>Simple Interest Calculator</h1>
-            Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25"> 
-            <span id="rate_val">
-                10.25
-            </span>% <br/>
+            <h1>Compound Interest Calculator</h1>
+            Initial Amount <input type="number"  id="principal">  <br/>
+            Regular Deposit <input type="number"  id="deposit">  <br/> 
+            <label for="frequency">Deposit Frequency </label>
+            <select id="frequency" name="frequency">
+              <option value="monthly">Monthly</option>
+              <option value="annually">Annually</option>
+            </select>
+            
+            Annual Interest Rate <input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" oninput="updateRate()"> 
+            <span id="rate_val">10.25</span>% <br/>
+            <script>
+              function updateRate() {
+                const rate = document.getElementById("rate").value;
+                document.getElementById("rate_val").innerText = rate;
+              }
+            
+              // Optional: Initialize the span on page load
+              window.onload = function() {
+                updateRate();
+              };
+            </script>
+            
             No. of Years 
           <datalist id="all_years"></datalist>
             <input list="all_years" name="years" />
@@ -30,7 +47,7 @@
             <button onclick="compute()">Compute Interest</button>
         </div>
         <footer>
-            &#169; This Calculator belongs to BlackMeiCyan
+            &#169; This Calculator belongs to Murphy
         </footer>
     </body>
 </html>
