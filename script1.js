@@ -8,7 +8,7 @@ function compute() {
 
     // Validation
     if (principal <= 0 || isNaN(principal)) {
-        showCustomAlert("Please enter a valid, positive initial amount!");
+        alert("Please enter a valid, positive initial amount!");
         document.getElementById("principal").focus();
         return;
     
