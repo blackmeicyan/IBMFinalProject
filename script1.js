@@ -1,6 +1,6 @@
 function compute() {
  
-        alert('Please enter a positive number!'); 
+        alert('Please enter a negative number!'); 
  
 }
 
