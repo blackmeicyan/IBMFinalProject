@@ -9,14 +9,22 @@ h1 {
     font-family: verdana;
     text-align: center;
 }
+h2 {
+    color: grey;
+    font-family: verdana;
+    text-align: center;
+}
 
 .maindiv {
     background-color: white;
     color: black;
-    width: 300px;
+    width: 90%;               /* Makes width relative to screen */
+    max-width: 400px;         /* Optional: Limit width on large screens */
     padding: 20px;
     border-radius: 25px;
     text-align: left;
+    margin: 20px auto;        /* Center it horizontally */
+    box-sizing: border-box;   /* Prevents padding from affecting width */
 }
 
 .popup {
