@@ -28,12 +28,13 @@ h2 {
 }
 
 input, select, textarea {
-  width: 100%;           /* Fills parent container width */
-  max-width: 100%;       /* Prevents overflow */
-  padding: 8px;
-  margin: 8px 0;
+  width: 60%;           /* Fills parent container width */
+  max-width: 70%;       /* Prevents overflow */
+  padding: 4px;
+  margin: 4px 0;
   box-sizing: border-box; /* Includes padding in the width */
 }
+
 .popup {
   position: fixed;
   top: 30%;
