@@ -5,10 +5,16 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/jpg" href="Rblogo.jpg">
         <title>Cmpound Interest Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div id="customAlert" style="display:none;" class="popup">
+          <h3>Murphy says:</h3>
+          <p id="alertMessage"></p>
+          <button onclick="hideCustomAlert()">OK</button>
+        </div>
         <div class="maindiv">
-            <h1>Compound Interest Calculator</h1>
+            <h1>Compound</h1><h2> Interest Calculator</h2> 
             Amount <input type="number"  id="principal">  <br/>
             Regular Deposit <input type="number"  id="deposit">  <br/> 
             <label for="frequency">Deposit Frequency </label>
@@ -49,11 +55,7 @@
             <button onclick="compute()">Compute Interest</button><br/>
             <br/>Result : <span id="result"></span><br/>
         </div>
-        <div id="customAlert" style="display:none;" class="popup">
-          <h3>Murphy says:</h3>
-          <p id="alertMessage"></p>
-          <button onclick="hideCustomAlert()">OK</button>
-        </div>
+
         
         <footer>
             &#169; This Calculator belongs to Murphy
