@@ -10,10 +10,13 @@ function compute() {
     if (principal <= 0 || isNaN(principal)) {
         alert("Please enter a valid, positive initial amount!");
         document.getElementById("principal").focus();
-        return;
-    
+        return;   
     }
-
+    if (years <= 0 || isNaN(years)) {
+        alert("Please enter a valid, positive initial amount!");
+        document.getElementById("years").focus();
+        return;   
+    }
     if (isNaN(deposit) || deposit < 0) {
         deposit = 0; // Optional deposits allowed
     }
