@@ -8,9 +8,10 @@ function compute() {
 
     // Validation
     if (principal <= 0 || isNaN(principal)) {
-        alert('Please enter a valid, positive initial amount!');
+        showCustomAlert("Please enter a valid, positive initial amount!");
         document.getElementById("principal").focus();
         return;
+    
     }
 
     if (isNaN(deposit) || deposit < 0) {
@@ -42,4 +43,13 @@ function compute() {
         <br> at an interest rate of <mark>${rate}%</mark>, 
         <br> you will receive a total of <mark>$${total}</mark> 
         <br> in the year <mark>${year}</mark>.`;
+}
+
+function showCustomAlert(message) {
+  document.getElementById("alertMessage").innerText = message;
+  document.getElementById("customAlert").style.display = "block";
+}
+
+function hideCustomAlert() {
+  document.getElementById("customAlert").style.display = "none";
 }
