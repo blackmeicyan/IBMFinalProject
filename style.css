@@ -18,3 +18,17 @@ h1 {
     border-radius: 25px;
     text-align: left;
 }
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #aaa;
+  z-index: 1000;
+}
+
