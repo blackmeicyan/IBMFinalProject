@@ -28,8 +28,8 @@ h2 {
 }
 
 input, select, textarea {
-  width: 120px;           /* Fills parent container width */
-  max-width: 200px;       /* Prevents overflow */
+  width: 15%;           /* Fills parent container width */
+  max-width: 160px;       /* Prevents overflow */
   padding: 4px;
   margin: 4px 0;
   box-sizing: border-box; /* Includes padding in the width */
